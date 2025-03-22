@@ -1,0 +1,115 @@
+:root{
+    --primary-color:#3a1c71;
+    --secondery-color: #f56ab7;
+    --accent-color: #ffaf7b;
+    --text-color: #333;
+    --light-color: #f9f9f9;
+    --dark-color:#212529;
+    --shadow:0 4px 6px rgba(0,0,0,0.1);
+    --transition:all 0.3s ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background: linear-gradient(to right, var(--primary-color), var(--secondery-color));
+}
+.navbar .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+
+}
+.logo-icon{
+    margin-right: 10px;
+    font-size: 2rem;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    position: relative;
+    
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:0;
+    background-color: white;
+    height: 2px;
+    transition: var(--transition);
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.humburger{
+    display: none;
+}
+
+.hero{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("pexels-fauxels-3184357.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-contain{
+    max-width: 600px;
+    padding: 0 20px;
+}
+.hero-contain h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.hero-contain p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--accent-color);
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.btn:hover{
+    transform: translate(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
