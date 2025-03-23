@@ -22,7 +22,16 @@
                 <li><a href="#" class="nav-link">Contact</a></li>
                 
             </ul>
-            <button class="humburger"><i class='bx bx-menu'></i></button>
+            <ul class="mobile-menu">
+                <li><button onclick=closeSidear() class="close-btn">X</button></li>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Service</a></li>
+                <li><a href="#" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+                <li></li>  
+            </ul>
+            <button onclick=showSidebar() class="humburger"><i class='bx bx-menu'></i></button>
         </div>
      </nav>
      <!--end navbar -->
@@ -36,5 +45,6 @@
         </div>
 
       </section>
+      <script src="index.js"></script>
 </body>
 </html>

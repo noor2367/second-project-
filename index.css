@@ -67,6 +67,36 @@
 .humburger{
     display: none;
 }
+.close-btn{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    color: var(--dark-color);
+    border: none;
+}
+
+.mobile-menu{
+    display:none;
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #f56ab7;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 20px;
+    list-style: none;
+    backdrop-filter:blur(10px);
+    padding-left: 20px;
+    padding-top: 40px;
+    transition: all 0.3s ease;
+    
+}
+
 
 .hero{
     height: 60vh;
@@ -112,4 +142,18 @@
 .btn:hover{
     transform: translate(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:480px) {
+    .nav-menu{
+        display: none;
+    }
+    .humburger{
+        display: inline-block;
+        color: #212529;
+        font-size: 36px;
+        background-color:transparent;
+        border: none;
+    }
+    
 }
