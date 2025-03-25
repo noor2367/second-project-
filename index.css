@@ -70,6 +70,7 @@
 }
 .humburger{
     display: none;
+    transition: var(--transition);
 }
 .close-btn{
     display: flex;
@@ -98,7 +99,7 @@
     backdrop-filter:blur(10px);
     padding-left: 20px;
     padding-top: 40px;
-    transition: right 0.3s ease-in-out;
+    transition: var(--transition);
 
 }
 
@@ -106,7 +107,7 @@
     color: var(--text-color);
 }
 .hero{
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,15 +333,70 @@
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 @media screen and (max-width:480px) {
+    .hero {
+        height: 50vh; /* Reduce height on mobile */
+        padding: 20px;
+        background-position: center;
+    }
+
+    .hero-contain {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .hero-contain h1 {
+        font-size: 2rem; /* Decrease heading size */
+        margin-bottom: 10px;
+    }
+
+    .hero-contain p {
+        font-size: 1rem; /* Adjust paragraph size */
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
     .nav-menu{
         display: none;
     }
+    
     .humburger{
         display: inline-block;
         color: #212529;
         font-size: 36px;
         background-color:transparent;
         border: none;
+        transition: var(--transition);
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .contact-iteam{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social-link {
+        justify-content: center;
+    }
+    .footer-coloumn h2::after {
+        margin: 10px auto; /* Center horizontally */
+    }
+
+}
+@media screen and (max-width:480px) {
+    .newsletter-form {
+        flex-direction: column; /* Stack input and button */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Ensure text aligns centrally */
     }
     
 }
