@@ -285,6 +285,51 @@
 .footer-link li a{
     color: white;
     text-decoration: none;
+    transition: var(--transition);
+}
+.footer-link a:hover{
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+.contact-info{
+    margin-bottom: 20px;
+}
+.contact-iteam{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-icon{
+    margin-right: 10px;
+}
+.newsletter-form{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.newsletter-input{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter-btn{
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter-btn:hover{
+    background-color: var(--light-color);
+    transition: var(--transition);
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 @media screen and (max-width:480px) {
     .nav-menu{
